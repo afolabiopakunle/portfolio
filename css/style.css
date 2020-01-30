@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
+
+.container {
+  padding-left: 0;
+}
+
+.container .title {
+  padding-top: 4rem;
+  letter-spacing: 3px;
+  margin: auto;
+  font-family: "Baloo Bhai", cursive;
+}
+
+.container .lead {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+span.bold {
+  font-weight: 400;
+}
+
+.card.shadow {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px !important;
+  border: none !important;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.card.shadow:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  transition: ease-in-out 0.2s;
+}
+
+.card-stack {
+  background-color: #f8f8f8;
+}
+
+.footnote {
+  color: #666666;
+  margin-bottom: 2px;
+}
+
+.footnote:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .display-1 {
+    font-size: 4rem;
+  }
+  .display-2 {
+    font-size: 3rem;
+  }
+}
