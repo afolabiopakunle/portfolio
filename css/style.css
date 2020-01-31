@@ -21,6 +21,15 @@ span.bold {
   font-weight: 400;
 }
 
+a {
+  color: #212529;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .card.shadow {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px !important;
