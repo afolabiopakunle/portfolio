@@ -1,0 +1,1046 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,400i,500i&display=swap");
+
+html,
+body {
+  font-family: "muli" !important;
+  overflow-x: hidden;
+  /* background-color: #cce3ee; */
+  background-color: #eef6f9;
+}
+
+.container-fluid.errand {
+  background-color: #eef6f9;
+}
+
+header {
+  background: #eef6f9;
+  box-shadow: 0 0.5rem 0.5rem rgba(203, 240, 253, 0.8);
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+.main-body.wallet {
+  margin-top: 7rem;
+}
+
+/* .nav-link.active {
+    color: #0086b9 !important;
+    position: relative;
+}
+
+ .nav-link.active {
+    position: relative;
+    line-height: 2rem;
+    margin-top: -4px;
+} 
+
+.nav-link.active:before {
+    position: absolute;
+    left: 25px;
+    bottom: 0.5rem;
+    height: 0;
+    width: 50px;
+    content: "";
+    
+}  */
+
+.notification-box {
+  position: relative;
+  margin-right: 2rem;
+}
+
+.notification {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: orangered;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  font-size: 8px;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 12px;
+  border: 2px solid white;
+}
+
+.profile-picture {
+  width: 40px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.errands-main {
+  /* padding: 1rem; */
+}
+
+.no-activity,
+.rejected {
+  font-size: 13px;
+  color: #b90000;
+  margin-bottom: 5px;
+}
+
+.posted {
+  font-size: 13px;
+  color: #b90000;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.you-accepted {
+  font-size: 13px;
+  color: #0b8e13;
+  margin-bottom: 5px;
+  margin-right: -2px;
+  margin-left: 10px;
+}
+
+.pending {
+  font-size: 13px;
+  color: #0086b9;
+  font-style: italic;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.accepted {
+  font-style: italic;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #0b8e13;
+  margin-left: 10px;
+}
+
+.time {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: 600;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.errand-details {
+  font-weight: 100;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+
+.divide {
+  display: flex;
+}
+
+.split {
+  justify-content: space-between;
+}
+
+.next-section {
+  padding-top: 5.5rem;
+}
+
+.button-wallet {
+  padding-bottom: 20px;
+}
+
+button {
+  overflow: visible;
+  margin: 0;
+  vertical-align: middle;
+  width: auto;
+}
+
+.lefttop-block {
+  /* overflow-y: scroll; */
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 90px;
+  bottom: 0;
+  height: 90vh;
+}
+
+.btn-submit-requests {
+  border: 2px solid #0086b9;
+  background-color: #fff;
+  border-radius: 06px;
+  color: #0086b9;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  float: left;
+  /* letter-spacing: -0.09em; */
+  line-height: 25px;
+  padding: 6px 06px;
+  width: 40%;
+  margin-left: 20px;
+}
+
+.btn-reset {
+  background-color: #0086b9;
+  border: 1px solid #0086b9;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  float: left;
+  /* letter-spacing: -0.09em; */
+  line-height: 25px;
+  margin-left: 30px;
+  padding: 6px 6px;
+  width: 40%;
+  box-shadow: none;
+}
+
+.card {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 0;
+}
+
+.bottom-card {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 0px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 15px rgba(0, 0, 0, 0.12);
+  margin-bottom: 25px;
+  /* margin-left: 21rem; */
+}
+
+.card-columns.card-block {
+  margin-bottom: 0rem;
+  padding-bottom: 1rem;
+  margin-top: -44px;
+}
+
+.list-errands {
+  display: flex;
+}
+
+.list-item {
+  display: flex;
+
+  /* justify-content: space-between; */
+}
+
+.user-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount-title {
+  color: #0086b9;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.amount-text {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.amount-inner {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.muted {
+  color: #a9acad;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.text-blue {
+  color: #0086b9;
+}
+
+.text-red {
+  color: rgb(184, 8, 8);
+}
+
+/* Tab */
+
+.wallet-link {
+  color: #a9acad;
+  font-weight: 700;
+}
+
+.wallet-link:hover {
+  text-decoration: none;
+  color: #a9acad;
+}
+
+.wallet-link.active {
+  border-bottom: 3px solid #0086b9;
+}
+
+.wallet-text-block {
+  padding-top: 20px !important;
+  padding-left: 30px;
+}
+.nav-link {
+  color: #a9acad;
+  /* font-weight: 700; */
+}
+
+.wallet-item {
+  margin-left: 5rem;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid transparent;
+}
+
+/* .nav-tabs .nav-link:hover {
+    border-color: transparent transparent transparent;
+  } */
+
+a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+
+a {
+  outline: 0;
+}
+
+.user-img {
+  margin-top: -08px;
+}
+
+.user-wallet-name {
+  font-weight: 700;
+}
+
+.hero-link {
+  color: #000000;
+  font-weight: 600;
+}
+
+a,
+.hero-link:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.wallet-card {
+  margin-left: 20rem;
+  width: 63rem;
+}
+
+.wallet-payment-text {
+  font-weight: 700;
+}
+
+.wallet-amt-blue,
+.wallet-amt-red,
+.wallet-amt {
+  font-weight: 700;
+}
+
+.wallet-date {
+  font-weight: 700;
+}
+
+/* WITHDRAWAL */
+
+.withdraw-header {
+  display: flex;
+}
+
+.withdraw-arrow {
+  font-weight: bold;
+}
+
+.withdraw-text {
+  font-size: 17px;
+  font-weight: 700;
+  margin-left: -07px;
+}
+
+.withdraw-text-block {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.input-withdraw {
+  width: 30rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #c5eaf8;
+}
+
+.wallet-col {
+  margin-left: none;
+}
+
+.btn-input {
+  display: flex;
+}
+
+.input-withdraw1 {
+  width: 10rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #c5eaf8;
+}
+
+.second-input {
+  margin-right: 9rem;
+}
+
+.btn-withdraw {
+  border: 1px solid #0086b9;
+  padding: 0.4rem 2rem;
+  height: 30%;
+  margin-top: 45px;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #0086b9;
+  margin-left: 14rem;
+}
+
+.withdraw-input-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-block {
+  margin-top: 40px;
+}
+
+/* FUND WALLET */
+
+.fund-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fund-item {
+  display: inline-block;
+}
+
+input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+label {
+  border: 1px solid #c5eaf8;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 20px;
+  width: 40px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked + .label-input {
+  border-color: #c5eaf8;
+}
+
+:checked + .label-input:before {
+  content: "✓";
+  background-color: #0086b9;
+  transform: scale(1);
+}
+
+:checked + .label-input img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+
+.fund-input-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-input-fund {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-text {
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.radio-block {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 1rem;
+}
+
+.radio-input {
+  width: 60px;
+  font-size: 19px;
+}
+
+.btn-fund {
+  border: 1px solid #0086b9;
+  padding: 0.4rem 3rem;
+  height: 30%;
+  margin-top: 10px;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #0086b9;
+  margin-left: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+/* WITHDRAW */
+@media (max-width: 1024px) {
+  .right-side {
+    margin-left: 5rem;
+  }
+
+  /* WALLET */
+
+  .wallet-card {
+    width: 720px;
+    margin-left: 2rem;
+  }
+
+  .bottom-card {
+    width: 620px;
+    margin-left: 0rem;
+  }
+
+  .amount-text {
+    font-size: 20px;
+  }
+
+  .amount-inner {
+    font-size: 12px;
+  }
+
+  .muted {
+    color: #a9acad;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .nav-item {
+    margin-left: 3rem;
+  }
+
+  .btn-submit-requests {
+    padding: 6px 06px;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .btn-reset {
+    margin-left: 20px;
+    width: 40%;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .bottom-card {
+    width: 554px;
+  }
+}
+
+@media (max-width: 800px) {
+  .form-block {
+    margin-left: 20px;
+  }
+
+  .bottom-card {
+    width: 390px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-side {
+    margin-left: 5rem;
+    margin-top: 20px;
+  }
+
+  .withdraw-header {
+    margin-left: 2rem;
+  }
+
+  .withdraw-text {
+    margin-left: 12px;
+  }
+
+  /* .sidebar {
+        display: none
+    } */
+
+  .main-body {
+    margin-left: 100px;
+  }
+
+  .left-box {
+    margin-left: 6rem;
+  }
+
+  .btn-submit-requests {
+    padding: 6px 06px;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .btn-reset {
+    margin-left: 20px;
+    padding: 6px 6px;
+    width: 40%;
+    box-shadow: none;
+  }
+
+  .side-box {
+    width: 370px;
+  }
+
+  .btn-withdraw {
+    border: 1px solid #0086b9;
+    padding: 0.4rem 2rem;
+    height: 30%;
+    margin-top: 45px;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #0086b9;
+    margin-left: 0rem;
+    margin-right: 10px;
+  }
+
+  /* WALLET */
+
+  .righttop {
+    margin-top: 28rem;
+    /* margin-right: 05px; */
+  }
+
+  /* .lefttop-block {
+        display: none;
+    } */
+
+  .wallet-card {
+    /* width: 390px; */
+    width: 765px;
+    margin-left: -13rem;
+  }
+
+  .bottom-card {
+    width: 355px;
+    /* margin-left: rem; */
+  }
+
+  .amount-text {
+    font-size: 20px;
+  }
+
+  .amount-inner {
+    font-size: 12px;
+  }
+
+  .muted {
+    color: #a9acad;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .user-detail {
+    display: block;
+  }
+
+  .wallet-payment-text {
+    font-size: 14.5px;
+    margin-bottom: 0px;
+    margin-top: 05px;
+  }
+
+  .wallet-amt-blue,
+  .wallet-amt-red,
+  .user-wallet-name,
+  .wallet-date {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 666px) {
+  .btn-submit-requests {
+    padding: 6px 06px;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .btn-reset {
+    margin-left: 20px;
+    width: 40%;
+    box-shadow: none;
+  }
+
+  .bottom-card {
+    width: 530px;
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .input-withdraw {
+    width: 23rem;
+  }
+
+  /* WALLET */
+
+  /* .wallet-card {
+        width: 300px;
+    } */
+
+  .sidebox-wallet {
+    width: 390px;
+    margin-left: 4.9rem;
+  }
+
+  .righttop {
+    margin-top: 28rem;
+    /* margin-right: 05px; */
+  }
+
+  .wallet-card {
+    width: 390px;
+    margin-left: -4rem;
+  }
+
+  .bottom-card {
+    width: 390px;
+    margin-left: -4rem;
+  }
+
+  .btn-reset {
+    padding: 6px 6px;
+    width: 40%;
+  }
+
+  .btn-submit-requests {
+    padding: 6px 06px;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .user-detail {
+    display: block;
+  }
+
+  .wallet-payment-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 05px;
+  }
+
+  .wallet-amt-blue,
+  .wallet-amt-red,
+  .user-wallet-name,
+  .wallet-date {
+    font-size: 14px;
+  }
+
+  .bottom-card {
+    width: 480px;
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .left-box {
+    margin-left: 3rem;
+  }
+
+  .side-box {
+    width: 280px;
+  }
+
+  .right-side {
+    margin-left: 2rem;
+  }
+
+  .input-withdraw {
+    width: 17.5rem;
+  }
+
+  .btn-withdraw {
+    border: 1px solid #0086b9;
+    padding: 0.4rem 1rem;
+  }
+
+  .input-withdraw1 {
+    width: 07rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid #c5eaf8;
+  }
+
+  /* WALLET */
+
+  .sidebox-wallet {
+    width: 340px;
+    margin-left: 1.4rem;
+  }
+
+  .wallet-card {
+    width: 340px;
+
+    margin-left: -5rem;
+  }
+
+  .bottom-card {
+    width: 330px;
+    margin-left: -0rem;
+  }
+
+  .user-detail {
+    display: block;
+  }
+
+  .wallet-payment-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 05px;
+  }
+
+  .wallet-amt-blue,
+  .wallet-amt-red,
+  .user-wallet-name,
+  .wallet-date {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .left-box {
+    margin-left: 2rem;
+  }
+
+  .right-side {
+    margin-left: 1rem;
+  }
+
+  /* WALLET */
+  .sidebox-wallet {
+    width: 310px;
+    margin-left: 1rem;
+  }
+
+  .righttop {
+    margin-top: 01rem;
+    margin-right: 20px;
+  }
+
+  .wallet-card {
+    width: 310px;
+    margin-left: 1rem;
+  }
+
+  .bottom-card {
+    width: 290px;
+  }
+
+  .user-detail {
+    display: block;
+  }
+
+  .wallet-payment-text {
+    font-size: 14.5px;
+    margin-bottom: 0px;
+    margin-top: 05px;
+  }
+
+  .wallet-amt-blue,
+  .wallet-amt-red,
+  .user-wallet-name,
+  .wallet-date {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sidebox-wallet {
+    width: 310px;
+    margin-left: 0.7rem;
+  }
+
+  .wallet-card {
+    margin-left: 0.7rem;
+  }
+
+  .bottom-card {
+    width: 270px;
+  }
+
+  .user-detail {
+    display: block;
+  }
+
+  .wallet-payment-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 05px;
+  }
+
+  .wallet-amt-blue,
+  .wallet-amt-red,
+  .user-wallet-name,
+  .wallet-date {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 330px) {
+  .input-withdraw {
+    width: 15.5rem;
+  }
+
+  .input-withdraw1 {
+    width: 6.5rem;
+  }
+
+  /* WALLET */
+
+  .righttop {
+    margin-top: 01rem;
+    margin-right: 20px;
+  }
+
+  .wallet-card {
+    width: 280px;
+  }
+
+  .bottom-card {
+    width: 280px;
+  }
+
+  .user-detail {
+    display: block;
+  }
+
+  .wallet-payment-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 05px;
+  }
+
+  .wallet-amt-blue,
+  .wallet-amt-red,
+  .user-wallet-name,
+  .wallet-date {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .side-box {
+    width: 270px;
+  }
+
+  .left-box {
+    margin-left: 1.5rem;
+  }
+
+  .right-side {
+    margin-left: 0.5rem;
+  }
+
+  .input-withdraw {
+    width: 14.5rem;
+  }
+
+  /* WALLET */
+
+  .btn-reset {
+    width: 45%;
+    margin-left: 05px;
+  }
+
+  .bottom-card {
+    width: 230px;
+  }
+
+  .righttop {
+    margin-top: 01rem;
+    margin-right: 20px;
+  }
+
+  .wallet-card {
+    width: 270px;
+  }
+
+  .user-detail {
+    display: block;
+  }
+
+  .wallet-payment-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 05px;
+  }
+
+  .wallet-amt-blue,
+  .wallet-amt-red,
+  .user-wallet-name,
+  .wallet-date {
+    font-size: 14px;
+  }
+  /* .wallet-payment-text {
+        font-size: 14px;
+        margin-right: 19px;
+    }
+
+    .user-wallet-name {
+        font-size: 14px;
+    }
+
+    .wallet-amt-blue {
+        font-size: 14px;
+        margin-right: 19px;
+    }
+
+    .wallet-amt-red {
+        font-size: 14px;
+        margin-right: 29px;
+    } */
+}

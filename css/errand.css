@@ -405,6 +405,11 @@ header {
   width: 30px;
 }
 
+.nav-link.wallet.active:before {
+  left: 20px;
+  width: 30px;
+}
+
 .notification-box {
   position: relative;
   margin-right: 2rem;
