@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/errand.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gofer</title>
+    </head>
+
+    <body>
+        <main class="container-fluid errand p-0">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand ml-5" href="./index.html"><img src="./img/logo-blue.png"
+                            style="width:110px; margin-top: -14px;" alt="logo"></a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navb">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navb">
+                        <ul class="navbar-nav mr-auto">
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <ul class="navbar-nav position-relative">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="all-errands" href="./errands.html">All Errands</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="post-errand" href="/post-errand.html">Post Errand</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./wallet.html">Wallet</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./profile.html">Profile</a>
+                                </li>
+                            </ul>
+                            <div class="notification-box">
+                                <i class="material-icons md-24">notification_important</i><span
+                                    class="notification">4</span>
+                            </div>
+                            <div class="user-box">
+                                <img src="./img/idris.jpg" class="profile-picture" alt="profile-pix"><span><i
+                                        class="material-icons md-24 text-dark  ">keyboard_arrow_down</i></span>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+                </div>
+            </header>
+            <div class="errands-main">
+                <div class="sidebar">
+                    <div class="side-box ongoing-errands p-3 position-relative">
+                        <h6 class="font-weight-bold "> Ongoing Errands</h6>
+                        <div class="scrollbox dragscroll">
+                            <p class="no-activity ">You currently have no activity running.</p>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="posted">You posted</p>
+                                    <p class="time">2 Hours ago</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture-inner mr-3" src="./img/idris.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Jumoke Adeleke
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split p-0">
+                                    <p class="you-accepted">You Accepted</p>
+                                    <p class="time">15 Minutes ago</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture-inner mr-3" src="./img/idris.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Nelson Igwilo
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split p-0">
+                                    <p class="you-accepted">You Accepted</p>
+                                    <p class="time">15 Minutes ago</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture-inner mr-3" src="./img/idris.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Nelson Igwilo
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split p-0">
+                                    <p class="you-accepted">You Accepted</p>
+                                    <p class="time">15 Minutes ago</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture-inner mr-3" src="./img/idris.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Nelson Igwilo
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super...</p>
+                                    </div>
+                                </div>
+                            </div>.
+                        </div>
+                    </div>
+                    <div class="side-box ongoing-bids p-3">
+                        <h6 class="font-weight-bold">Ongoing Bids</h6>
+                        <div class="scrollbox dragscroll">
+                            <p class="no-activity">You currently have no ongoing bids running.</p>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="pending">Pending</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Daniel Waters
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super friendly...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="accepted">Accepted</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Daniel Waters
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super friendly...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="rejected">Rejected</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Daniel Waters
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super friendly...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-body post-errand-display">
+                    <div class="min-map">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-empty"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-empty"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-empty"></p>
+                            </div>
+                        </div>
+                        <h4 class="bold-title text-left mt-3">
+                            What kind of Errand do you want to run?
+                        </h4>
+                    </div>
+                    <div class="card-items">
+                        <p class="card-item"><i class="material-icons md-24">local_mall</i>&nbsp; Shopping
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">local_shipping</i>&nbsp; Pick
+                            up &
+                            Delivery</p>
+                        <p class="card-item"><i class="material-icons md-24">fastfood</i>&nbsp; Catering
+                            Service</p>
+                        <p class="card-item"><i class="material-icons md-24">ac_unit</i>&nbsp;
+                            Cleaning</p>
+                        <p class="card-item"><i class="material-icons md-24">local_laundry_service</i>&nbsp;
+                            Laundry</p>
+                        <p class="card-item"><i class="material-icons md-24">school</i>&nbsp; Reading/Writing</p>
+                        <p class="card-item"><i class="material-icons md-24">style</i>&nbsp; Ticketing</p>
+                        <p class="card-item"><i class="material-icons md-24">home_work</i>&nbsp; Real Estate
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">school</i>&nbsp; Tutoring</p>
+                        <p class="card-item"><i class="material-icons md-24">home_work</i>&nbsp; Chauffer
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">toys</i>&nbsp; Gardening
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">room_service</i>&nbsp; Food
+                            Purchase</p>
+                        <p class="card-item"><i class="material-icons md-24">devices_other</i>&nbsp;
+                            Electronics
+                            Repair</p>
+                        <p class="card-item"><i class="material-icons md-24">phone_iphone</i>&nbsp; Phones
+                            Repair</p>
+                        <p class="card-item"><i class="material-icons md-24">laptop</i>&nbsp; Computers
+                            Repair</p>
+                        <p class="card-item"><i class="material-icons md-24">local_shipping</i>&nbsp; Moving
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">child_friendly</i>&nbsp; Baby
+                            Sitting</p>
+                        <p class="card-item"><i class="material-icons md-24">weekend</i>&nbsp; Carpentry
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">school</i>&nbsp; Research &
+                            Documentation</p>
+                        <p class="card-item"><i class="material-icons md-24">directions_car</i>&nbsp; Auto
+                            Repairs</p>
+                        <p class="card-item"><i class="material-icons md-24">home_work</i>&nbsp; Fashion and
+                            Tailoring</p>
+                        <p class="card-item"><i class="material-icons md-24">motorcycle</i>&nbsp; Errands
+                        </p>
+                        <p class="card-item"><i class="material-icons md-24">home_work</i>&nbsp; Make Up
+                            Artistry</p>
+                        <p class="card-item"><i class="material-icons md-24 text-white">view_carousel</i>&nbsp;
+                            Others
+                        </p>
+                        <form class="" action="#">
+
+                            <button id="next-to-location" type="submit"
+                                class="btn mt-5 btn-primary btn-lg float-right px-5"><span class="spinner-grow"></span>
+                                Next</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="main-body post-location d-none">
+                    <div class="min-map m-3">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-empty"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-empty"></p>
+                            </div>
+                        </div>
+                        <h4 class="bold-title text-left mt-3">
+                            Pick a Location for your Errand
+                        </h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="" class="label-title text-dark pt-0 pb-0">Where do you want your
+                                            Errand done?</label>
+                                        <input type="text" class="form-control form-control-lg mb-1 w-50" placeholder=""
+                                            name="text1">
+                                        <p class="font-weight-bold m-2 "><i class="material-icons">
+                                                trip_origin
+                                            </i> Use my current location</p>
+                                        <a type="submit" href="#" id="previous-post-errand"
+                                            class="btn px-5 mt-5 btn-primary btn-lg px-3 float-left"><span
+                                                class="spinner-grow"></span>
+                                            Previous</a>
+                                        <a type="submit" href="#"
+                                            class="btn px-5 mt-5 btn-primary btn-lg float-right px-3"
+                                            id="next-to-post-errand-details"><span class="spinner-grow"></span>
+                                            Next</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-body post-errand-details d-none">
+                    <div class="min-map m-3">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-empty"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4 class="bold-title text-left mt-2">
+                                    Errand Details </h4>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="" class="label-title text-dark text-left w-auto pt-0 pb-0">Errand
+                                            Details</label>
+                                        <textarea name="" class="form-control  mb-1" id="" cols="20"
+                                            rows="8"></textarea>
+                                        <div class="form-group">
+                                            <label for="" class="label-title text-dark">How Much are you
+                                                willing to pay
+                                                for this errand?</label>
+                                            <input type="text" class="form-control form-control-lg mb-1 " placeholder=""
+                                                name="text1">
+                                            <label for="" class="label-title text-dark ">When is the
+                                                deadline
+                                                for this errand?</label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="" class="text-dark">Date:</label>
+                                                    <input type="datetime-local"
+                                                        class="form-control form-control-lg mb-1 d-inline-block"
+                                                        placeholder="" name="text1">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="" class="text-dark">Time:</label>
+                                                    <input type="time"
+                                                        class="form-control form-control-lg mb-1 d-inline-block"
+                                                        placeholder="" name="text1">
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="container-check"><span>Insure this errand? <span
+                                                            class="bluetext"> Learn
+                                                            More</span> </span>
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <input type="text" class="form-control form-control-lg " placeholder=""
+                                                name="text1">
+                                        </div>
+                                    </div>
+                                    <a type="submit" href="#"
+                                        class="btn d-block w-25 col-xl-10 mt-5 btn-primary btn-lg px-3 float-left"
+                                        id="previous-to-location"><span class="spinner-grow"></span> Previous</a>
+                                    <a type="submit" href="#" id="preview-btn"
+                                        class="btn d-block w-25 col-xl-10 mt-5 btn-outline-primary btn-lg float-right px-3"
+                                        id=""><span class="spinner-grow"></span> Preview</a>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-body preview-pane d-none">
+                    <div class="min-map m-3">
+                        <div class="map-progress">
+                            <div>
+                                <p class="map">Category</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">Location</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map"> &nbsp; &nbsp; Details</p>
+                                <p class="circle-filled"></p>
+                                <p class="progress-line-filled"></p>
+                            </div>
+                            <div class="sub-map">
+                                <p class="map">&nbsp; Preview</p>
+                                <p class="circle-filled"></p>
+                            </div>
+                        </div>
+                        <h4 class="bold-title text-left mt-3">
+                            Preview
+                        </h4>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group preview-box">
+                                        <div class="preview-pane">
+                                            <p class="label-title">Category</p>
+                                            <p class="selected-category">Shopping</p>
+                                            <p class="label-title">Location</p>
+                                            <p class="selected-location">Maryland</p>
+                                            <p class="label-title">Full Information About the Errand</p>
+                                            <p class="selected-information">I am in Ajah, I need someone to help me
+                                                pick
+                                                up
+                                                my clothes from my friend in Ikeja Along before 6:00pm today.
+                                            </p>
+                                            <p class="label-title">How much you are willing to pay</p>
+                                            <p class="sub-title">this includes all cost of running this errand</p>
+                                            <p class="selected-payment">N 3,500</p>
+                                            <p class="label-title">You have Valued this errand in Naira</p>
+                                            <p class="sub-title">this means in the case of any issue, you will be
+                                                refunded
+                                                this money</p>
+                                            <p class="selected-payment">N 21,500</p>
+
+                                        </div>
+                                        <a type="submit" href="#" id="previous-post-errand"
+                                            class="btn px-5 mt-5 btn-outline-primary btn-lg px-3 float-left"><span
+                                                class="spinner-grow"></span>
+                                            Send Gofer</a>
+                                        <a type="submit" href="#" class="btn mt-5 btn-primary btn-lg float-right px-5"
+                                            id="next-to-post-errand-details"><span class="spinner-grow"></span>
+                                            Post to Public</a>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <script src="./js/jquery-3.4.1.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>

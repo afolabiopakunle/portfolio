@@ -1,0 +1,114 @@
+.container.profile {
+  margin-top: 7rem !important;
+}
+
+.profile-page {
+  /* margin-left: 20px; */
+}
+
+.user-profile-card {
+  min-width: 350px;
+  height: 380px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
+  padding: 1rem;
+}
+
+.user-profile-card.two {
+}
+
+.divide-profile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-review {
+  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
+  padding: 1rem;
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.dash-profile {
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  width: 110px;
+}
+
+.dash-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.dash-email {
+  text-align: center;
+  font-size: 19px;
+}
+
+.dash-number {
+  margin-top: -0.8rem;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.dash-stars.reviews {
+  display: block;
+}
+.dash-stars .material-icons {
+  color: #efce27;
+}
+
+.review-list {
+  list-style-type: none;
+  padding-top: 1rem;
+}
+
+.verify-account,
+.verify-account .material-icons {
+  color: #0086b9;
+}
+
+.dash-stars {
+  display: flex;
+  justify-content: center;
+  margin-top: -0.8rem;
+}
+
+.dash-titles {
+  font-weight: bolder;
+  color: #bbbbbb;
+}
+
+.user-profile-card.history {
+  min-width: 370px;
+  margin-left: -1.2rem;
+}
+
+.review-list {
+  display: flex;
+}
+
+.reviewers-pix {
+  display: block;
+  border-radius: 50%;
+  width: 70px;
+}
+
+@media (max-width: 1526px) {
+  .divide-profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-profile-card {
+    max-width: 350px;
+  }
+
+  .user-profile-card.two {
+    margin-right: 0;
+  }
+}

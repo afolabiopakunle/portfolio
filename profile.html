@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/errand.css">
+        <link rel="stylesheet" href="./css/profile.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gofer</title>
+    </head>
+
+    <body>
+        <main class="container-fluid errand p-0">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand ml-5" href="./index.html"><img src="./img/logo-blue.png"
+                            style="width:110px; margin-top: -14px;" alt="logo"></a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navb">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navb">
+                        <ul class="navbar-nav mr-auto">
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <ul class="navbar-nav position-relative">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="all-errands" href="./errands.html">All Errands</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="post-errand" href="./post-errand.html">Post Errand</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="./wallet.html">Wallet</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active profile" href="#">Profile</a>
+                                </li>
+                            </ul>
+                            <div class="notification-box">
+                                <i class="material-icons md-24">notification_important</i><span
+                                    class="notification">4</span>
+                            </div>
+                            <div class="user-box">
+                                <img src="./img/idris.jpg" class="profile-picture" alt="profile-pix"><span><i
+                                        class="material-icons md-24 text-dark  ">keyboard_arrow_down</i></span>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+                </div>
+            </header>
+            <div class="errands-main">
+                <div class="sidebar">
+                    <div class="side-box ongoing-errands p-3 position-relative">
+                        <h6 class="font-weight-bold "> Ongoing Errands</h6>
+                        <div class="scrollbox dragscroll">
+                            <p class="no-activity ">You currently have no activity running.</p>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="posted">You posted</p>
+                                    <p class="time">2 Hours ago</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture-inner mr-3" src="./img/idris.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Jumoke Adeleke
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split p-0">
+                                    <p class="you-accepted">You Accepted</p>
+                                    <p class="time">15 Minutes ago</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture-inner mr-3" src="./img/idris.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Nelson Igwilo
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split p-0">
+                                    <p class="you-accepted">You Accepted</p>
+                                    <p class="time">15 Minutes ago</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture-inner mr-3" src="./img/idris.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Nelson Igwilo
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split p-0">
+                                    <p class="you-accepted">You Accepted</p>
+                                    <p class="time">15 Minutes ago</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture-inner mr-3" src="./img/idris.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Nelson Igwilo
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super...</p>
+                                    </div>
+                                </div>
+                            </div>.
+                        </div>
+                    </div>
+                    <div class="side-box ongoing-bids p-3">
+                        <h6 class="font-weight-bold">Ongoing Bids</h6>
+                        <div class="scrollbox dragscroll">
+                            <p class="no-activity">You currently have no ongoing bids running.</p>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="pending">Pending</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Daniel Waters
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super friendly...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="accepted">Accepted</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Daniel Waters
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super friendly...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-card">
+                                <div class="divide split">
+                                    <p class="rejected">Rejected</p>
+                                </div>
+                                <div class="main-card divide">
+                                    <img class="profile-picture mr-3" src="./img/dope.jpg" alt="profile-picture">
+                                    <div class="details divide down">
+                                        <p class="user-name">
+                                            Daniel Waters
+                                        </p>
+                                        <p class="errand-details">My dog needs a bath, I haven't washed her in months,
+                                            she's
+                                            super friendly...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-body">
+                    <div class="profile-page">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="divide-profile">
+                                    <div class="user-profile-card text-center">
+                                        <img class="dash-profile" src="./img/fine.jpg" alt="">
+                                        <h6 class="dash-name">Steve Peters</h6>
+                                        <p class="dash-email">steve.peters@hotmail.com</p>
+                                        <p class="dash-number">0803 081 0384</p>
+                                        <div class="dash-stars">
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                            <i class="material-icons">star_border</i>
+                                        </div>
+                                        <a href="#" class="btn btn-sm edit-btn btn-primary mt-3">Edit
+                                            Profile</a>
+                                        <p class="verify-account mt-4"><i
+                                                class="material-icons mr-2">verified_user</i>Verify
+                                            Your Account</p>
+                                    </div>
+                                    <div class="user-profile-card">
+                                        <h5 class="dash-titles">Notifications</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="user-review">
+                                        <h5 class="dash-titles">Reviews</h5>
+                                        <ul>
+                                            <li class="review-list">
+                                                <img class="reviewers-pix" src="./img/fine.jpg" alt="">
+                                                <div class="dash-stars reviews">
+                                                    <i class="material-icons">star</i>
+                                                    <i class="material-icons">star</i>
+                                                    <i class="material-icons">star</i>
+                                                    <i class="material-icons">star_half</i>
+                                                    <i class="material-icons">star_border</i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3 mt-n3">
+                                <div class="user-profile-card history">
+                                    <h5 class="dash-titles">Errand History</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./js/jquery-3.4.1.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>
