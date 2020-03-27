@@ -31,7 +31,7 @@ body {
 }
 
 a.nav-link {
-  color: #111111 !important;
+  color: #111111;
 }
 
 .container-fluid.p-0 {
@@ -75,6 +75,7 @@ a.nav-link {
 .banner {
   display: flex;
   align-items: center;
+  margin-top: 8rem;
 }
 
 .jumbotron .lead {
@@ -160,7 +161,7 @@ a.nav-link {
 
 .time {
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 13px;
   margin-bottom: 0px;
   letter-spacing: 0.1px;
@@ -177,7 +178,7 @@ a.nav-link {
 }
 
 .card-items {
-  max-width: 930px;
+  max-width: 1030px;
 }
 
 .text-insert {
@@ -198,9 +199,15 @@ a.nav-link {
   background: transparent;
   padding: 0.7em 1.5em;
   margin: 0.7em 0.5em;
+  font-weight: bold;
   border-radius: 10px;
   box-shadow: 4px 4px 8px rgba(81, 81, 81, 0.26), -3px -3px 6px rgba(209, 233, 242, 0.44) !important;
   cursor: pointer;
+  width: 220px;
+}
+
+.card-item-2 {
+  width: calc(440px + 1.25em) !important;
 }
 
 .card.bg-white:hover {
@@ -370,10 +377,6 @@ header {
   z-index: 10;
 }
 
-.errands-display {
-  /* margin-top: rem !important; */
-}
-
 .ongoing-errands-title {
   width: 100%;
   position: sticky;
@@ -453,13 +456,17 @@ header {
   border-radius: 50%;
 }
 
-.user-name {
+.user-name,
+.errand-type {
   font-weight: 600;
   margin: 0;
   color: rgba(0, 0, 0, 1);
   font-size: 14.5px;
 }
 
+a:hover {
+  text-decoration: none;
+}
 .errand-details {
   font-weight: 100;
   font-size: 12px;
@@ -527,15 +534,35 @@ header {
 .side-box {
   background-color: white;
   width: 330px;
-  margin-bottom: 1px;
+  margin-bottom: -4px;
+  z-index: -3;
   border-radius: 5px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid lightgrey;
   min-height: 350px;
   /* overflow: auto; */
 }
 
+.side-box.top {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.side-box.top {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.side-box.bottom {
+  border: none;
+  border-top: 2px solid lightgray;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 .scrollbox {
-  max-height: 250px;
+  max-height: 280px;
+  border-radius: 5px;
   overflow-y: scroll;
   cursor: grab;
 }
@@ -545,7 +572,7 @@ header {
 }
 
 .main-body {
-  margin-left: 380px;
+  margin-left: 370px;
   margin-top: 4rem;
   padding-left: 0.4rem;
 }
@@ -624,7 +651,7 @@ header {
 }
 
 .bluetext {
-  color: #0086b9;
+  color: #0086b9 !important;
 }
 
 .category {
@@ -641,17 +668,15 @@ header {
   }
 }
 
-@media (max-width: 685px) {
+@media (max-width: 1085px) {
   .sidebar {
     display: none;
   }
   .main-body {
-    margin-left: 1rem;
+    margin: 4rem auto !important;
   }
 }
 /* POST ERRAND */
-.mini-map {
-}
 .map-progress {
   display: flex;
 }
@@ -675,6 +700,81 @@ header {
   margin-left: 2rem;
 }
 
+.container.profile {
+  margin-top: 7rem !important;
+}
+
+.user-picture {
+  position: relative;
+}
+
+.verified-logo {
+  position: absolute;
+  color: #0086b9;
+  top: 65%;
+  left: 90px;
+}
+
+.verified-logo.material-icons {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.pix-wrapper {
+  width: 110px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.user-profile-card {
+  height: 380px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.user-review {
+  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
+  padding: 1rem 1.5rem;
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.dash-titles {
+  font-weight: bolder;
+  color: #bbbbbb;
+  margin-bottom: 1rem;
+}
+
+.review-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid lightblue;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chat-panel {
+  min-width: 350px;
+  height: 380px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
+  padding: 1rem;
+  min-height: 85vh;
+  position: fixed;
+}
+
+.chatbox {
+  position: absolute;
+  bottom: 1.5rem;
+}
 .circle-empty {
   width: 1.5rem;
   height: 1.5rem;
@@ -776,6 +876,36 @@ header {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.modal-header .close {
+  position: absolute;
+  right: -1rem;
+  top: -1.3rem;
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 3px;
+  border-radius: 50%;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.xl-txt {
+  font-size: 4rem !important;
+}
+
+.modal-header .close:hover {
+  color: red;
+  opacity: 1 !important;
+}
+
+.verify-msg {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 ::-webkit-scrollbar {

@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: "Muli", sans-serif;
   user-select: none;
-  background: #eef6f9;
+  background: black;
 }
 
 .btn {
@@ -16,7 +16,6 @@ body {
 .navbar {
   justify-self: self-start;
   background: #eef6f9;
-  box-shadow: 0 0.5rem 0.5rem rgba(203, 240, 253, 0.8);
 }
 
 .nav-item {
@@ -71,6 +70,9 @@ body {
   align-items: center;
 }
 
+.container.box {
+  background-color: black !important;
+}
 .jumbotron .lead {
   max-width: 60%;
   margin: 0 auto;
@@ -712,9 +714,10 @@ body {
   letter-spacing: 3px;
   margin: auto;
   font-family: "Baloo Bhai", cursive;
+  color: #888888;
 }
 
-.container .lead {
+.photo-box .container .lead {
   max-width: 700px;
   margin: auto;
   margin-bottom: 1.5rem;
@@ -733,9 +736,8 @@ a:hover {
   color: black;
 }
 
-.card.shadow {
+.card {
   cursor: pointer;
-  box-shadow: 35px 35px 60px #d5d5d5, -35px -35px 60px #ffffff !important;
   border: none !important;
   border-radius: 10px;
   margin-top: 2rem;
@@ -747,7 +749,7 @@ a:hover {
 }
 
 .card-stack {
-  background: linear-gradient(145deg, #ffffff, #e1e1e1);
+  background: linear-gradient(145deg, rgb(173, 168, 173), rgb(236, 195, 195));
 }
 
 .footnote {
@@ -778,5 +780,85 @@ a:hover {
 @media (max-width: 1521px) {
   .my-pix {
     margin-bottom: 1rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0084b9a2;
+  border-radius: 5px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: block;
+}
+
+.box-in {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  position: relative;
+}
+
+.spin-container {
+  width: 100%;
+  height: 100%;
+  animation: spin 12s linear infinite;
+  position: relative;
+}
+.shape {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: border-radius 1s ease-out;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite both alternate;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+.bd {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background-size: 100%;
+  background-position: center center;
+  display: flex;
+  color: #003;
+  font-size: 5vw;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  animation: spin 12s linear infinite reverse;
+  opacity: 1;
+  z-index: 2;
+  background: url(../img/afolabi.png);
+  background-size: cover;
+  background-repeat: none;
+}
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
   }
 }

@@ -1,0 +1,403 @@
+.scrollbox.profile-page {
+  height: 270px;
+  padding-left: 1rem;
+}
+
+.user-card.errand-history {
+  max-height: auto !important;
+}
+.divide-profile {
+  display: flex;
+  justify-content: space-between;
+  max-width: 738px;
+}
+
+.errand-card {
+  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
+  padding: 1rem 1.5rem;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.review-list {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.reviewers-pix {
+  border-radius: 50%;
+  width: 60px;
+  margin-right: 1rem;
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.bidder-name {
+  margin-bottom: 8px;
+}
+
+.review-comment {
+  color: #292929;
+}
+
+.errand-num {
+  color: #bababa;
+  margin-bottom: 0px;
+}
+.dash-stars {
+  display: flex;
+  justify-content: center;
+  margin-top: -0.8rem;
+}
+
+.dash-stars.bids {
+  display: block;
+}
+
+.dash-stars.bids .material-icons {
+  font-size: 16px;
+}
+.dash-stars .material-icons {
+  color: #efce27;
+}
+
+.task-title {
+  font-weight: bolder;
+  color: #888888;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  margin-top: 1.2rem;
+}
+
+.user-profile-card.ongoing {
+  min-width: 370px;
+  margin-left: -1.2rem;
+}
+
+.notifications {
+  align-items: center;
+  margin: 0 auto 1rem auto;
+}
+
+.errand-status {
+  color: #292929;
+}
+
+.errand-history .posted {
+  color: #0086b9;
+}
+
+.errand-history .errand-details {
+  font-style: normal;
+}
+
+.full-details {
+  font-weight: bold;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.errand-location h6 {
+  font-weight: bold;
+  margin-bottom: -3px;
+}
+
+.summary {
+  padding: 5px 1.2rem;
+  height: 60px;
+}
+
+.summary:not(:last-child) {
+  border-right: 2px solid lightgrey;
+}
+
+.summary .date {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.green-cash,
+.date {
+  margin-bottom: -3px;
+}
+
+.green-cash {
+  color: #0b8e13;
+  font-weight: bold;
+}
+
+.grey-text {
+  color: #888888;
+}
+
+.bottom-errands {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.activity-feed {
+  min-height: 380px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
+  padding: 1rem;
+  position: fixed;
+  width: 375px;
+}
+
+.no-bids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.circle-filled-w {
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 6px solid #0086b9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 2rem;
+  z-index: 5;
+}
+
+.circle-filled-w-empty {
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 6px solid lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 2rem;
+  z-index: 5;
+}
+
+.activity-timeline {
+  position: absolute;
+}
+
+.activity-content-1 {
+  margin-left: 4rem;
+  color: #0086b9;
+  font-weight: bold;
+}
+
+.activity-content-2 {
+  margin-left: 4rem;
+  padding-top: 7px;
+}
+
+.activity-line {
+  min-height: 40px;
+  border-left: 2px solid lightgray;
+  margin-bottom: -39px;
+  margin-left: -11px;
+  display: inline-block;
+}
+
+.negotiate-btn {
+  background-color: lightgray;
+  padding: 5px 12px;
+  border-radius: 10px;
+  margin-left: 1rem;
+}
+
+.bid {
+  font-weight: bold;
+}
+
+.bid-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accept-bid,
+.reject-bid {
+  border: 2px solid #0086b9;
+  padding: 5px 12px;
+  border-radius: 10px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.accept-bid:hover {
+  font-weight: bold;
+}
+
+.reject-bid {
+  color: #b90000;
+  border: none;
+}
+
+.reject-bid:hover {
+  color: #b90000;
+  font-weight: bold;
+}
+
+.negotiate-pop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-pop {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.bid-input {
+  border: none;
+  background: powderblue;
+  width: 120px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #0086b9;
+}
+
+.ctrl {
+  margin-top: 10px;
+}
+
+.negotiate-price {
+  margin-bottom: -3px;
+  color: #0086b9;
+  font-weight: bold;
+}
+
+.negotiated {
+  background-color: #eef6f9;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #13f7ff;
+  background: #0086b9;
+  border-radius: 18px;
+  border: 1px solid #ffffff;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 3px solid #13f7ff;
+  height: 30px;
+  width: 30px;
+  border-radius: 25px;
+  background: #0086b9;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12.5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #0086b9;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #ffffff;
+  background: #0086b9;
+  border-radius: 18px;
+  border: 1px solid #13f7ff;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 3px solid #fff;
+  height: 36px;
+  width: 36px;
+  border-radius: 25px;
+  background: #0086b9;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #969696;
+  border: 1px solid #ffffff;
+  border-radius: 36px;
+  box-shadow: 0px 0px 0px #ffffff;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #969696;
+  border: 1px solid #ffffff;
+  border-radius: 36px;
+  box-shadow: 0px 0px 0px #ffffff;
+}
+input[type="range"]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 3px solid #fff;
+  height: 36px;
+  width: 36px;
+  border-radius: 25px;
+  background: #0086b9;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #969696;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #969696;
+}
+
+@media (max-width: 1246px) {
+  .accept-bid,
+  .reject-bid {
+    padding: 5px 6px;
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .negotiate-btn {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1026px) {
+  .sidebar {
+    display: none;
+  }
+  .user-profile-card {
+    margin: 2rem auto;
+  }
+  .user-profile-card.two {
+    margin-right: 0;
+  }
+}
+@media (max-width: 726px) {
+  .bottom-errands {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .activity-feed {
+    position: relative;
+    width: 100%;
+  }
+  .summary:not(:last-child) {
+    border: none;
+    text-align: left;
+  }
+
+  .activity-line {
+    margin-left: -12px;
+  }
+}

@@ -2,33 +2,13 @@
   margin-top: 7rem !important;
 }
 
-.profile-page {
-  /* margin-left: 20px; */
+.scrollbox.profile-page {
+  height: 270px;
+  padding-left: 1rem;
 }
 
-.user-profile-card {
-  min-width: 350px;
-  height: 380px;
-  background-color: white;
-  border-radius: 3px;
-  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
-  padding: 1rem;
-}
-
-.user-profile-card.notif {
-  padding-top: 2rem !important;
-}
-
-.divide-profile {
-  display: flex;
-  justify-content: space-around;
-}
-
-.user-review {
-  box-shadow: 0px 0px 34px -15px rgb(125, 156, 167);
-  padding: 1rem 1.5rem;
-  background-color: white;
-  margin-top: 1rem;
+.user-card.errand-history {
+  max-height: auto !important;
 }
 
 .dash-profile {
@@ -41,11 +21,11 @@
 .dash-name {
   font-weight: bold;
   text-align: center;
+  font-size: 19px;
 }
 
 .dash-email {
   text-align: center;
-  font-size: 19px;
 }
 
 .dash-number {
@@ -82,14 +62,14 @@
   margin-top: -0.8rem;
 }
 
-.dash-titles {
-  font-weight: bolder;
-  color: #bbbbbb;
-}
-
-.user-profile-card.history {
+.user-profile-card.ongoing {
   min-width: 370px;
   margin-left: -1.2rem;
+}
+
+.user-profile-card.post-history {
+  height: 85vh;
+  position: fixed;
 }
 
 .review-list {
@@ -106,6 +86,7 @@
   width: 60px;
   margin-right: 1rem;
   margin-top: 0;
+  align-self: flex-start;
 }
 
 .reviewer-name {
@@ -126,18 +107,14 @@
   color: #292929;
 }
 
-@media (max-width: 1526px) {
-  .divide-profile {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.errand-history .posted {
+  color: #0086b9;
+}
 
-  .user-profile-card {
-    max-width: 350px;
-  }
+.errand-history .errand-details {
+  font-style: normal;
+}
 
-  .user-profile-card.two {
-    margin-right: 0;
-  }
+.pointer {
+  cursor: pointer;
 }

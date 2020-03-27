@@ -17,7 +17,7 @@ $(document).ready(function () {
         $("#all-errands").addClass('active');
         $("#post-errand").removeClass('active');
     });
-    $("#next-to-location, #previous-to-location").click(function (e) {
+    $(".card-item, #previous-to-location").click(function (e) {
         e.preventDefault();
         $(".post-location").removeClass('d-none');
         $(".errands-display").addClass('d-none');
@@ -135,5 +135,6 @@ $(document).ready(function () {
 
         exports.reset = reset;
     }));
-})
 
+
+})
