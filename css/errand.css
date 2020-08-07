@@ -187,11 +187,13 @@ a.nav-link {
 
 .card.bg-white {
   border-width: 0;
+  min-width: 240px;
 }
 
 .card-text {
   height: 72px;
   overflow: hidden;
+  color: #212529;
 }
 
 .card-item {
