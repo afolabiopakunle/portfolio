@@ -102,21 +102,12 @@ tr.introjs-showElement>th {
   font-size: 13px;
   font-weight: bold;
   color: white;
+
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
-  background: #ff3019;
-  /* Old browsers */
-  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
-  /* Chrome,Safari4+ */
-  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, #ff3019 0%, #cf0404 100%);
-  /* IE10+ */
-  background: -o-linear-gradient(top, #ff3019 0%, #cf0404 100%);
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+
   /* W3C */
   width: 20px;
   height: 20px;
@@ -228,12 +219,12 @@ tr.introjs-showElement>th {
   overflow: visible;
   display: inline-block;
   padding: 0.3em 0.8em;
-  border: 1px solid #d4d4d4;
+  /* border: 1px solid #d4d4d4; */
   margin: 0;
   text-decoration: none;
   text-shadow: 1px 1px 0 #fff;
-  font: 11px/normal sans-serif;
-  color: #333;
+  font: 14px/normal sans-serif;
+  color: #0088cc !important;
   white-space: nowrap;
   cursor: pointer;
   outline: none;

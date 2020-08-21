@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/introjs.css">
+    <script src="https://use.fontawesome.com/5c65e16b4d.js"></script>
     <style>
         body {
             min-width: 320px;
@@ -26,7 +27,7 @@
                 <img src="./img/afolabi logo.png" alt="Logo" class="myLogo">
                 <button class="btn btn-primary" onclick="startIntro()">Show Me Around</button>
             </a>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" id="step3">
                 <li class="nav-item">
                     <a class="nav-link rounded button_slide slide_right" target="_blank" title="Github" href="https://github.com/afolabiopakunle">GitHub</a>
                 </li>
@@ -40,7 +41,7 @@
         </div>
     </nav>
     <div class="container box">
-        <div class="box">
+        <div class="box" id="step2">
             <h1 class="display-3 mt-5 text-center title h2s">Afolabi <span class="display-1">Opakunle</span></h1>
         </div>
 
@@ -53,12 +54,12 @@
         <div class="container">
             <div class="row pt-2">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" id="step1">
                         <a href="./errands.html" target="_blank">
                             <div class="card-body">
                                 <h4 class="card-title">Complete Errands App | JavaScript & Bootstrap</h4>
                                 <p class="card-text">Do you need quick services of regular daily people to help do
-                                    stuffs for you? Try Gofer!</p>
+                                    stuffs for you?</p>
                             </div>
                         </a>
                     </div>
@@ -75,7 +76,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4" id="step1">
+                <div class="col-md-4">
                     <div class="card ">
                         <a href="https://www.martinasapartments.com" target="_blank">
                             <div class="card-body">
@@ -163,8 +164,10 @@
             <div class="container">
                 <div class="row p-5 ">
                     <div class="col-md-6">
-                        <img src="./img/afolabi logo.png" width="30" alt="logo">
-                        <span class="font-weight-bold">afolabiopakunle.tech</span> by <span class="bg-primary p-1 rounded">@afolabiopa</span>
+                        <a href="mailto:opakunleafolabi@gmail.com" id="step4">
+                            <img src="./img/afolabi logo.png" width="30" alt="logo">
+                            <span class="font-weight-bold">opakunleafolabi@gmail.com</span> by <span class="bg-primary p-1 rounded">Hire me!</span>
+                        </a>
                         <p>Delivering clear-cut Frontend user interfaces since 2017.</p>
                         <div class="box-in">
                             <div class="spin-container">
@@ -208,34 +211,38 @@
             var intro = introJs();
             intro.setOptions({
                 steps: [{
-                        intro: "<div style='text-align: center'><h4>Hi!</h4><p>Let me show around</p></div>"
+                        intro: "<div style='text-align: center'><h4>Hi!</h4><p>Let me show around</p></div>",
                     },
                     {
                         element: document.querySelector('#step1'),
-                        intro: "This is a tooltip."
+                        intro: "<div style='text-align: center'>Each card links to a live project!</div>",
+                        position: 'right',
+                        tooltipClass: 'special'
                     },
                     {
-                        element: document.querySelectorAll('#step2')[0],
-                        intro: "Ok, wasn't that fun?",
+                        element: document.querySelector('#step2'),
+                        intro: "My name ;)",
                         position: 'right'
                     },
                     {
                         element: '#step3',
-                        intro: 'More features, more fun.',
-                        position: 'left'
+                        intro: 'Accounts',
+                        position: 'left',
                     },
                     {
                         element: '#step4',
-                        intro: "Another step.",
+                        intro: "Mail me.",
                         position: 'bottom'
                     },
                     {
                         element: '#step5',
-                        intro: 'Get it, use it.'
+                        intro: 'Have a nice time.'
                     }
                 ],
-                "showButtons": true,
-                "exitOnOverlayClick": false
+                "showBullets": false,
+                "exitOnOverlayClick": false,
+                "showProgress": true,
+                "overlayOpacity": 1
             })
             intro.start();
         }
