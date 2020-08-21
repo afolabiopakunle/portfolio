@@ -4,35 +4,35 @@
   z-index: 999999;
   background-color: #000;
   opacity: 0;
-  background: -moz-radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
-  background: -webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.4)),color-stop(100%,rgba(0,0,0,0.9)));
-  background: -webkit-radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
-  background: -o-radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
-  background: -ms-radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
-  background: radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: -moz-radial-gradient(center, ellipse farthest-corner, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  background: -webkit-radial-gradient(center, ellipse farthest-corner, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%);
+  background: -o-radial-gradient(center, ellipse farthest-corner, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%);
+  background: -ms-radial-gradient(center, ellipse farthest-corner, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%);
+  background: radial-gradient(center, ellipse farthest-corner, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%);
   filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000',endColorstr='#e6000000',GradientType=1)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=50);
   -webkit-transition: all 0.3s ease-out;
-     -moz-transition: all 0.3s ease-out;
-      -ms-transition: all 0.3s ease-out;
-       -o-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .introjs-fixParent {
   z-index: auto !important;
   opacity: 1.0 !important;
   -webkit-transform: none !important;
-     -moz-transform: none !important;
-      -ms-transform: none !important;
-       -o-transform: none !important;
-          transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
 }
 
 .introjs-showElement,
-tr.introjs-showElement > td,
-tr.introjs-showElement > th {
+tr.introjs-showElement>td,
+tr.introjs-showElement>th {
   z-index: 9999999 !important;
 }
 
@@ -45,8 +45,8 @@ tr.introjs-showElement > th {
 }
 
 .introjs-relativePosition,
-tr.introjs-showElement > td,
-tr.introjs-showElement > th {
+tr.introjs-showElement>td,
+tr.introjs-showElement>th {
   position: relative;
 }
 
@@ -55,16 +55,16 @@ tr.introjs-showElement > th {
   position: absolute;
   z-index: 9999998;
   background-color: #FFF;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, .9);
   border: 1px solid #777;
-  border: 1px solid rgba(0,0,0,.5);
+  border: 1px solid rgba(0, 0, 0, .5);
   border-radius: 4px;
-  box-shadow: 0 2px 15px rgba(0,0,0,.4);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, .4);
   -webkit-transition: all 0.3s ease-out;
-     -moz-transition: all 0.3s ease-out;
-      -ms-transition: all 0.3s ease-out;
-       -o-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .introjs-tooltipReferenceLayer {
@@ -74,20 +74,20 @@ tr.introjs-showElement > th {
   z-index: 100000000;
   background-color: transparent;
   -webkit-transition: all 0.3s ease-out;
-     -moz-transition: all 0.3s ease-out;
-      -ms-transition: all 0.3s ease-out;
-       -o-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .introjs-helperLayer *,
 .introjs-helperLayer *:before,
 .introjs-helperLayer *:after {
   -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-      -ms-box-sizing: content-box;
-       -o-box-sizing: content-box;
-          box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .introjs-helperNumberLayer {
@@ -103,78 +103,97 @@ tr.introjs-showElement > th {
   font-weight: bold;
   color: white;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  background: #ff3019; /* Old browsers */
-  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* Chrome10+,Safari5.1+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404)); /* Chrome,Safari4+ */
-  background:    -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
-  background:     -ms-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* IE10+ */
-  background:      -o-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* Opera 11.10+ */
-  background:         linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);  /* W3C */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  background: #ff3019;
+  /* Old browsers */
+  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+  /* Chrome,Safari4+ */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* IE10+ */
+  background: -o-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+  /* W3C */
   width: 20px;
-  height:20px;
+  height: 20px;
   line-height: 20px;
   border: 3px solid white;
   border-radius: 50%;
-  filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0)"; /* IE6-9 */
-  filter: "progid:DXImageTransform.Microsoft.Shadow(direction=135, strength=2, color=ff0000)"; /* IE10 text shadows */
-  box-shadow: 0 2px 5px rgba(0,0,0,.4);
+  filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0)";
+  /* IE6-9 */
+  filter: "progid:DXImageTransform.Microsoft.Shadow(direction=135, strength=2, color=ff0000)";
+  /* IE10 text shadows */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
 }
 
 .introjs-arrow {
   border: 5px solid transparent;
-  content:'';
+  content: '';
   position: absolute;
 }
+
 .introjs-arrow.top {
   top: -10px;
-  border-bottom-color:white;
+  border-bottom-color: white;
 }
+
 .introjs-arrow.top-right {
   top: -10px;
   right: 10px;
-  border-bottom-color:white;
+  border-bottom-color: white;
 }
+
 .introjs-arrow.top-middle {
   top: -10px;
   left: 50%;
   margin-left: -5px;
-  border-bottom-color:white;
+  border-bottom-color: white;
 }
+
 .introjs-arrow.right {
   right: -10px;
   top: 10px;
-  border-left-color:white;
+  border-left-color: white;
 }
+
 .introjs-arrow.right-bottom {
-  bottom:10px;
+  bottom: 10px;
   right: -10px;
-  border-left-color:white;
+  border-left-color: white;
 }
+
 .introjs-arrow.bottom {
   bottom: -10px;
-  border-top-color:white;
+  border-top-color: white;
 }
+
 .introjs-arrow.bottom-right {
   bottom: -10px;
   right: 10px;
-  border-top-color:white;
+  border-top-color: white;
 }
+
 .introjs-arrow.bottom-middle {
   bottom: -10px;
   left: 50%;
   margin-left: -5px;
-  border-top-color:white;
+  border-top-color: white;
 }
+
 .introjs-arrow.left {
   left: -10px;
   top: 10px;
-  border-right-color:white;
+  border-right-color: white;
 }
+
 .introjs-arrow.left-bottom {
   left: -10px;
-  bottom:10px;
-  border-right-color:white;
+  bottom: 10px;
+  border-right-color: white;
 }
 
 .introjs-tooltip {
@@ -183,9 +202,14 @@ tr.introjs-showElement > th {
   visibility: visible;
   padding: 10px;
   background-color: white;
-  min-width: 600px;
-  max-width: 600px;
+  min-width: 200px;
+  max-width: 300px;
   border-radius: 3px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .4);
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -ms-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
   transition: opacity 0.1s ease-out;
 }
 
@@ -221,7 +245,8 @@ tr.introjs-showElement > th {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
-  /*background-clip: padding-box;*/ /* commented out due to Opera 11.10 bug */
+  /*background-clip: padding-box;*/
+  /* commented out due to Opera 11.10 bug */
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   border-radius: 0.2em;
@@ -283,7 +308,9 @@ tr.introjs-showElement > th {
   border-radius: 0.2em;
 }
 
-.introjs-disabled, .introjs-disabled:hover, .introjs-disabled:focus {
+.introjs-disabled,
+.introjs-disabled:hover,
+.introjs-disabled:focus {
   color: #9a9a9a;
   border-color: #d4d4d4;
   box-shadow: none;
@@ -294,12 +321,13 @@ tr.introjs-showElement > th {
 }
 
 .introjs-hidden {
-     display: none;
+  display: none;
 }
 
 .introjs-bullets {
   text-align: center;
 }
+
 .introjs-bullets ul {
   box-sizing: content-box;
   clear: both;
@@ -307,17 +335,19 @@ tr.introjs-showElement > th {
   padding: 0;
   display: inline-block;
 }
+
 .introjs-bullets ul li {
   box-sizing: content-box;
   list-style: none;
   float: left;
   margin: 0 2px;
 }
+
 .introjs-bullets ul li a {
   box-sizing: content-box;
   display: block;
-  width: 16px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   background: #ccc;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -325,11 +355,13 @@ tr.introjs-showElement > th {
   text-decoration: none;
   cursor: pointer;
 }
+
 .introjs-bullets ul li a:hover {
   background: #999;
 }
+
 .introjs-bullets ul li a.active {
-  background: #01B0F1;
+  background: #999;
 }
 
 .introjs-progress {
@@ -340,6 +372,7 @@ tr.introjs-showElement > th {
   border-radius: 4px;
   background-color: #ecf0f1
 }
+
 .introjs-progressbar {
   box-sizing: content-box;
   float: left;
@@ -356,7 +389,7 @@ tr.introjs-showElement > th {
   height: 0;
   width: 0;
   left: 50%;
-  top: 40%;
+  top: 50%;
 }
 
 .introjs-fixedTooltip {
@@ -371,10 +404,12 @@ tr.introjs-showElement > th {
   height: 15px;
   cursor: pointer;
 }
+
 .introjs-hint:focus {
-    border: 0;
-    outline: 0;
+  border: 0;
+  outline: 0;
 }
+
 .introjs-hidehint {
   display: none;
 }
@@ -383,7 +418,7 @@ tr.introjs-showElement > th {
   position: fixed;
 }
 
-.introjs-hint:hover > .introjs-hint-pulse {
+.introjs-hint:hover>.introjs-hint-pulse {
   border: 5px solid rgba(60, 60, 60, 0.57);
 }
 
@@ -399,16 +434,18 @@ tr.introjs-showElement > th {
   z-index: 10;
   position: absolute;
   -webkit-transition: all 0.2s ease-out;
-     -moz-transition: all 0.2s ease-out;
-      -ms-transition: all 0.2s ease-out;
-       -o-transition: all 0.2s ease-out;
-          transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
+
 .introjs-hint-no-anim .introjs-hint-dot {
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
 }
+
 .introjs-hint-dot {
   box-sizing: content-box;
   border: 10px solid rgba(146, 146, 146, 0.36);
@@ -432,70 +469,82 @@ tr.introjs-showElement > th {
 }
 
 @-webkit-keyframes introjspulse {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -webkit-transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 0.0;
-    }
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+  }
+
+  25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+  }
+
+  50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+  }
+
+  75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+  }
 }
 
 @-moz-keyframes introjspulse {
-    0% {
-        -moz-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -moz-transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        -moz-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -moz-transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        -moz-transform: scale(1);
-        opacity: 0.0;
-    }
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+  }
+
+  25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+  }
+
+  50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+  }
+
+  75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+  }
 }
 
 @keyframes introjspulse {
-    0% {
-        transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0.0;
-    }
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+  }
+
+  25% {
+    transform: scale(0);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.1);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.0;
+  }
 }
