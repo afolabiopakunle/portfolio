@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./img/afolabi logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/introjs.css">
@@ -29,13 +30,16 @@
             </a>
             <ul class="navbar-nav" id="step3">
                 <li class="nav-item">
-                    <a class="nav-link rounded button_slide slide_right" target="_blank" title="Github" href="https://github.com/afolabiopakunle">GitHub</a>
+                    <a class="nav-link rounded button_slide slide_right" target="_blank" title="Github"
+                        href="https://github.com/afolabiopakunle">GitHub</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link rounded button_slide slide_right" title="Twitter" target="_blank" href="https://twitter.com/AfolabiOpa">Twitter</a>
+                    <a class="nav-link rounded button_slide slide_right" title="Twitter" target="_blank"
+                        href="https://twitter.com/AfolabiOpa">Twitter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link rounded ml-4 button_slide slide_right" target="_blank" href="https://www.linkedin.com/in/afolabi-opakunle-836048197/">LinkedIn</a>
+                    <a class="nav-link rounded ml-4 button_slide slide_right" target="_blank"
+                        href="https://www.linkedin.com/in/afolabi-opakunle-836048197/">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -132,11 +136,13 @@
                     <div class="card ">
                         <div class="card-body">
                             <h4 class="card-title text-danger">Upcoming projects...</h4>
-                            <p class="card-text mb-0"><strong>Drag & Drop eShopping application</strong> <span class="text-danger">
+                            <p class="card-text mb-0"><strong>Drag & Drop eShopping application</strong> <span
+                                    class="text-danger">
                                     *</span></p>
                             <p class="card-text mb-0"><strong>betting application</strong> <span class="text-danger">
                                     *</span></p>
-                            <p class="card-text mb-0"><strong>Driver request application</strong><span class="text-danger">
+                            <p class="card-text mb-0"><strong>Driver request application</strong><span
+                                    class="text-danger">
                                     *</span></p>
                         </div>
                     </div>
@@ -151,7 +157,8 @@
 
         <div class="container-fluid bg-white p-0">
             <div class="container">
-                <a href="https://martinasapartments.com/hardstorage/2020/08/Afolabi-O.-Opakunle-Front-End.pdf" target="_blank">
+                <a href="https://martinasapartments.com/hardstorage/2020/08/Afolabi-O.-Opakunle-Front-End.pdf"
+                    target="_blank">
                     <h1 class="text-success pt-5 pl-5">My Resume</h1>
                 </a>
                 <div class="row pl-5 pt-2 ">
@@ -184,7 +191,8 @@
                                 <a href="https://github.com/designcourse" target="_blank" rel="noopener noreferrer">
                                     <p class="footnote">Gary Simon</p>
                                 </a>
-                                <a href="https://www.youtube.com/c/ColtSteeleCode/featured" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.youtube.com/c/ColtSteeleCode/featured" target="_blank"
+                                    rel="noopener noreferrer">
                                     <p class="footnote">Colt Steele</p>
                                 </a>
                             </div>
@@ -217,33 +225,33 @@
             var intro = introJs();
             intro.setOptions({
                 steps: [{
-                        intro: "<div style='text-align: center'><h4>Hi!</h4><p>Let me show around</p></div>",
-                    },
-                    {
-                        element: document.querySelector('#step1'),
-                        intro: "<div style='text-align: center'>Each card links to a live project!</div>",
-                        position: 'top',
-                        tooltipClass: 'special'
-                    },
-                    {
-                        element: document.querySelector('#step2'),
-                        intro: "My name ;)",
-                        position: 'bottom'
-                    },
-                    {
-                        element: '#step3',
-                        intro: 'Accounts',
-                        position: 'left',
-                    },
-                    {
-                        element: '#step4',
-                        intro: "Get in touch via email.",
-                        position: 'top'
-                    },
-                    {
-                        element: '#step5',
-                        intro: '<p style="text-align: center">Thanks!'
-                    }
+                    intro: "<div style='text-align: center'><h4>Hi!</h4><p>Let me show around</p></div>",
+                },
+                {
+                    element: document.querySelector('#step1'),
+                    intro: "<div style='text-align: center'>Each card links to a live project!</div>",
+                    position: 'top',
+                    tooltipClass: 'special'
+                },
+                {
+                    element: document.querySelector('#step2'),
+                    intro: "My name ;)",
+                    position: 'bottom'
+                },
+                {
+                    element: '#step3',
+                    intro: 'Accounts',
+                    position: 'left',
+                },
+                {
+                    element: '#step4',
+                    intro: "Get in touch via email.",
+                    position: 'top'
+                },
+                {
+                    element: '#step5',
+                    intro: '<p style="text-align: center">Thanks!'
+                }
                 ],
                 "showBullets": false,
                 "exitOnOverlayClick": false,
@@ -252,7 +260,9 @@
             })
             intro.start();
         }
-        startIntro()
+        setTimeout(() => {
+            startIntro();
+        }, 6000);
     </script>
 </body>
 
