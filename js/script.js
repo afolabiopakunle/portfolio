@@ -138,3 +138,45 @@ $(document).ready(function () {
 
 
 })
+function startIntro() {
+    var intro = introJs();
+    intro.setOptions({
+        steps: [{
+            intro: "<div style='text-align: center'><h4>Hi!</h4><p>Let me show around</p></div>",
+        },
+        {
+            element: document.querySelector('#step1'),
+            intro: "<div style='text-align: center'>Each card links to a live project!</div>",
+            position: 'top',
+            tooltipClass: 'special'
+        },
+        {
+            element: document.querySelector('#step2'),
+            intro: "The name ;)",
+            position: 'bottom'
+        },
+        {
+            element: '#step3',
+            intro: 'Accounts',
+            position: 'left',
+        },
+        {
+            element: '#step4',
+            intro: "Get in touch via email.",
+            position: 'top'
+        },
+        {
+            element: '#step5',
+            intro: '<p style="text-align: center">Thanks!</p>'
+        }
+        ],
+        "showBullets": false,
+        "exitOnOverlayClick": false,
+        "showProgress": true,
+        "overlayOpacity": 1
+    })
+    intro.start();
+}
+setTimeout(() => {
+    startIntro();
+}, 5000);
